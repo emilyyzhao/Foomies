@@ -1,0 +1,249 @@
+/*index css*/
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat:700');
+body.index
+{
+background-image: url("https://www.tamron.eu/fileadmin/user_upload/magazin/moody-food/dark_moody_mystic_light_chiaroscuro_food_photography.jpg"); no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+}
+
+.checkbox-grid li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+body{
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/restaurant_icons.png"); no repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+/*makes images appear circular*/
+.image-cropper {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+/* index styling */
+#fridgeHead{
+  font-family: 'Fredoka One', cursive;
+  color: #DE6262;
+}
+
+#ingredientHead{
+  font-family: 'Fredoka One', cursive;
+  color: #DE6262;
+}
+
+#oopsHead{
+  font-family: 'Fredoka One';
+  color: #DE6262;
+}
+
+.miniblue{
+  color: #01A79B;
+}
+
+.cuteTitle{
+  font-family: 'Fredoka One';
+  color: #DE6262;
+}
+
+.blue{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFB88C;
+  color: #FFF;
+  padding: 10px;
+  width: 30%;
+  border-radius: 15px;
+}
+
+.recipeImage{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.websiteImage{
+  width: 375px;
+  height: 300px;
+}
+
+#tasty{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.modal-title{
+  margin: 0 auto;
+  font-family: 'Fredoka One', cursive;
+  color: #DE6262;
+}
+.navbar{
+  background-color: #DE6262;
+}
+.nav-item{
+  color:#FFF;
+}
+#logo{
+  width: 25%;
+}
+
+header.masthead {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.masthead .intro-text {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+header.masthead .intro-text .intro-lead-in {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+header.masthead .intro-text .intro-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+.btn-default {
+  color: #ffffff;
+  background-color: #DE6262;
+  border-color: #DE6262;
+}
+
+.btn-active{
+  color: #ffffff;
+  background-color: #FFB88C;
+  border-color: #DE6262;
+}
+
+#row1{
+  margin-top: 100px;
+}
+
+#addimage{
+  margin-bottom: 25px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.column{
+  position: relative;
+  display: inline-block;
+}
+.wrapper{
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.checkbox-grid li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+header,footer,aside{
+    display: block;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+label{
+    /* width: 450px; */
+    display: block;
+}
+
+table{
+    align-items: center;
+    width: 1100px;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+th{
+    background: #01A79B;
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+}
+td{
+    border: 1px solid #01A79B;
+    color: white;
+    padding: 15px;
+    margin: 0 auto;
+    align-items: center;
+  background-color: white;
+  color: #01A79B;
+}
+#ingredientTable{
+  align-items: center;
+  width: 45%;
+  margin: 0 auto;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.headerbar{
+    width: 1110px;
+    float: left;
+}
+.headerbar.top{
+  position: absolute;
+    padding: 30px;
+    align: center;
+    background: linear-gradient(to bottom left, #6699ff 0%, #ffffff 102%);
+    min-height: 100px;
+    left: 138px;
+
+}
+.headerbar.bottom{
+    min-height: 60px;
+}
+.leftbar{
+    width: 462px;
+    background: #DE6262;
+    min-height: 480px;
+    float: left;
+    padding: 50px;
+    color: white;
+}
+.rightbar{
+    width: 1400px;
+    background: #DE6262;
+    min-height: 580px;
+    float: none;
+    padding: 30px;
+}
+
+
+.checkbox-grid li {
+    display: block;
+    float: left;
+    width: 25%;
+}

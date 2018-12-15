@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="CSS/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="JS/index.js" type="text/javascript"></script>
+
+    <title>Home Page</title>
+  </head>
+
+  <body onload='init()'>
+  <body class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="index.html">
+        <img class= "navbar-brand" id="logo" src="images/foomiesLogoWhite.png">
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fridge.html">My Fridge</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fridge.html">Add a Grocery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fridge.html">Add a Foomie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipe_generator.html">Find A Recipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="landing.html">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Let's get cooking.</div>
+          <div class="intro-heading text-uppercase">Welcome home,</div>
+          <h3 class="intro-heading text-uppercase" id="result"></h3>
+          <div class="intro-lead-in">What would you like to do?</div>
+  				<script>
+  				document.getElementById("result").innerHTML = localStorage.getItem("currentUser");
+  			</script>
+          <a class="btn btn-default" href="fridge.html">See My Fridge</a>
+          <a class="btn btn-default" href="recipe_generator.html">Find A Recipe</a>
+        </div>
+  </div>
+    </header>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+  </body>
+
+</html>

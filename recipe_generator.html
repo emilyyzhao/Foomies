@@ -1,0 +1,190 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="JS/fridge.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <title>Recipe Generator</title>
+  </head>
+  <body onload='init()'>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="index.html">
+        <img class= "navbar-brand" id="logo" src="images/foomiesLogoWhite.png">
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fridge.html">My Fridge</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fridge.html">Add a Grocery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fridge.html">Add a Foomie</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="recipe_generator.html">Find A Recipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="landing.html">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<body style="text-align: center;">
+<div class = "project" id="ingredientTable">
+  <br>
+    <br>
+      <br>
+      <br>
+        <br>
+
+	<h1 id="ingredientHead">Select items:</h1>
+	<header class="miniblue"><strong>Choose your ingredients (choose at least 2)</strong><br><br></header>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Vegetables</th>
+        <th scope="col">Protein</th>
+        <th scope="col">Dairy/Grain</th>
+        <th scope="col">Fruit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+
+        <td><input type="checkbox" id = "spinach" name="acs" value="Spinach"/>
+        <label class ="checkbox" for="spinach" ><img class="image-cropper" src="https://i.imgur.com/Gu28tN5.png" alt="spinach"></label>Spinach</td>
+        <td><input type="checkbox" id = "chicken" name="acs" value="Chicken"/ >
+            <label for="chicken"><img class="image-cropper" src="https://i.imgur.com/kXLViR4.png" alt="chicken"></label>Chicken</td>
+        <td><input type="checkbox" id = "cheese" name="acs" value="Cheese"/>
+            <label for="cheese"><img class="image-cropper" src="https://i.imgur.com/NkDwRr5.png" alt="cheese"></label>Cheese</td>
+        <td>  <input type="checkbox" id = "lemon" name="acs" value="Lemon" />
+            <label for="lemon"><img class="image-cropper" src="https://i.imgur.com/UUgS1Gl.png" alt="lemon"></label><br>Lemon</td>
+      </tr>
+      <tr>
+
+        <td><input type="checkbox" id = 'tomato' name="acs" value='Tomato'/>
+          <label for='tomato'><img class="image-cropper"src="https://i.imgur.com/VK118bv.png" alt="tomato"></label>Tomato</td>
+        <td><input type="checkbox" id = "egg" name="acs" value="Egg" />
+            <label for="egg"><img class="image-cropper" src="https://i.imgur.com/0ovi1hu.png" alt="egg"></label><br>Egg</td>
+        <td><input type="checkbox" id = "milk" name="acs" value="Milk"/>
+            <label for="milk"><img class="image-cropper" src="https://i.imgur.com/Wskft8F.png" alt="milk"></label>Milk</td>
+            <td><input type="checkbox" id = "apples" name="acs" value="Apples"/>
+                <label for="apples"><img class="image-cropper" src="https://i.imgur.com/CwP9Emh.png" alt="apples"></label><br>Apples</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id = "garlic" name="acs" value="Garlic" />
+          <label for="garlic"><img class="image-cropper" src="https://i.imgur.com/kQBRixl.png" alt="garlic"></label>Garlic</td>
+        <td><input type="checkbox" id = "steak" name="acs" value="Steak"/>
+            <label for="steak"> <img class="image-cropper" src="https://i.imgur.com/1fcZzXa.png" alt="steak"></label>Steak</td>
+        <td><input type="checkbox" id = "butter" name="acs" value="Butter"/>
+            <label for="butter"><img class="image-cropper" src="https://i.imgur.com/dN55gQH.png" alt="butter"></label>Butter</td>
+        <td><input type="checkbox" id = "banana" name="acs" value="Banana"/>
+            <label for="banana"><img class="image-cropper" src="https://i.imgur.com/fiyCURv.jpg" alt="banana"></label><br>Banana</td>
+
+      </tr>
+
+      <tr>
+        <td>  <input type="checkbox" id = "onion" name="acs" value="Onion" />
+              <label for="onion"><img class="image-cropper" src="https://i.imgur.com/cUgmlau.png" alt="onion"></label>Onion</td>
+        <td><input type="checkbox" id = "shrimp" name="acs" value="Shrimp"/>
+            <label for="shrimp"><img class="image-cropper" src="https://i.imgur.com/GPlliIQ.png" alt="shrimp"></label>Shrimp</td>
+        <td><input type="checkbox" id = "bread" name="acs" value="Bread"/>
+            <label for="bread"><img class="image-cropper" src="https://i.imgur.com/9pbQ4Rh.png" alt="bread"></label>bread</td>
+      <td><input type="checkbox" id = "juice" name="acs" value="Juice"/>
+          <label for="juice"><img class="image-cropper" src="https://i.imgur.com/nJOFqI9.jpg" alt="juice"></label><br>Juice</td>
+      </tr>
+
+      <tr>
+        <td>  <input type="checkbox" id = "asparagus" name="acs" value="Asparagus" />
+            <label for="asparagus"> <img class="image-cropper" src="https://i.imgur.com/7mLTQSG.png" alt="asparagus"></label>Asparagus</td>
+        <td><input type="checkbox" id = "bacon" name="acs" value="Bacon"/>
+            <label for="bacon"><img class="image-cropper" src="https://i.imgur.com/cXuf6fd.png" alt="bacon"></label>Bacon</td>
+        <td><input type="checkbox" id = "pasta" name="acs" value="Pasta"/>
+            <label for='pasta'><img class="image-cropper" src="https://i.imgur.com/rPGAR2w.png" alt='pasta's></label>Pasta</td>
+        <td><input type="checkbox" id = "strawberries" name="acs" value="Strawberries"/>
+            <label for="strawberries"><img class="image-cropper" src="https://i.imgur.com/Ch4Q9LG.jpg" alt="strawberries"></label>Strawberries</td>
+      </tr>
+
+      <tr>
+        <td>  <input type="checkbox" id = "carrot" name="acs" value="Carrot"/>
+            <label for="carrot"> <img class="image-cropper" src="https://i.imgur.com/zAT3eNI.png" alt="carrot"></label>Carrot</td>
+        <td>  <input type="checkbox" id = "sausages" name="acs" value="Sausages"/>
+              <label for="sausages"><img class="image-cropper" src="https://i.imgur.com/fjM5EyH.png" alt="sausages"></label>Sausages</td>
+
+      </tr>
+    <tr>
+      <td><input type="checkbox" id = "broccoli" name="acs" value="Broccoli"/>
+              <label for="broccoli"><img class="image-cropper" src="https://i.imgur.com/JcheGQp.png" alt="broccoli"></label>Broccoli</td>
+          <td> <input type="checkbox" id = "salmon" name="acs" value="Salmon"/>
+               <label for="salmon"><img class="image-cropper" src="https://i.imgur.com/0J2328V.png" alt="salmon"></label>Salmon</td>
+</tr>
+      <tr>
+        <td>  <input type="checkbox" id = "corn" name="acs" value="Corn"/>
+            <label for="corn"> <img class="image-cropper" src="https://i.imgur.com/RZcGEr2.png" alt="corn"></label><br>Corn</td>
+      </tr>
+
+      <tr>
+<td> <input type="checkbox" id = "potato" name="acs" value="potato"/>
+    <label for="potato"> <img class="image-cropper" src="https://i.imgur.com/SMTFSfz.png" alt="potato"></label>Potato</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+	<p>
+
+<button type="button" id = "clearCheck" class="btn btn-warning" onclick="uncheckAll()">Clear All</button>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#selectModal" onclick="printChecked()">Find a recipe</button>
+    <div class="modal fade" id="selectModal" role="dialog">
+<div class="modal-dialog">
+
+  <!-- Modal content-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">I'm hungry!</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body" id="ingredientSelect">
+      <p> Ready to go! Click "Generate" to find recipe results!
+    </p>
+    </div>
+    <div class="modal-footer">
+      <a id="changeresults" href="">
+      <button type="button" onclick = "recipechange()" class="btn btn-default">Generate</button></a>
+    </div>
+  </div>
+</div>
+</div>
+ <p>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+/*Landing CSS*/
+.login-block {
+    background: #DE6262;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+float:left;
+width:100%;
+overflow: hidden;
+padding : 50px 0;
+}
+
+/*css for landing page*/
+* {margin: 0; padding: 0}
+
+.center-image {    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;}
+#logo{
+  width: 30%;
+  padding-bottom: 10px;
+}
+.banner-sec{background-image:url('/Web/Images/Food4.jpg')  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.carousel-inner{border-radius:0 0 0 0;}
+.carousel-caption{text-align:left; left:5%;}
+.carousel {
+  max-height: 700px;
+  overflow: hidden;
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+}
+.login-sec{padding: 50px 30px; position:relative;}
+.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+.login-sec .copy-text i{color:#FEB58A;}
+.login-sec .copy-text a{color:#E36262;}
+.login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #DE6262;}
+.login-sec h2:after{content:" "; width:100px; height:5px; background:#FEB58A; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+.btn-login{background: #DE6262; color:#fff; font-weight:600;}
+.banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+.banner-text h2{color:#FFF; font-weight:600;}
+.banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
+.banner-text p{color:#fff; background-color: rgba(222,98,98); }
+
+/* Registration CSS*/
+/* Style the form */
+
+body.registration{
+  background: #DE6262;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+float:left;
+width:100%;
+padding : 50px 0;
+} */
+
+/*form styles*/
+#mstitle{
+  text-align: center;
+  position: relative;
+}
+
+#msform{
+  width:600px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius:3px;
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.4);
+  padding:20px 30px;
+
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+
+  position: relative;
+}
+
+#msform fieldset:not(:first-of-type){
+  display: none;
+}
+
+#msform input, #msform textarea{
+  padding:15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100;
+  box-sizing: border-box;
+}
+
+/*buttons*/
+#msform .action-button {
+  background: #DE6262;
+  color:#fff;
+  font-weight:600;
+	width: 100px;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #FFB88C;
+}
+
+/*progress bar*/
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  counter-reset: step;
+}
+
+#progressbar li {
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size:12px;
+  width: 33.33%;
+  float: left;
+  position:relative;
+}
+
+#progressbar li:before{
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display:block;
+  font-size:10px;
+  color: #666;
+  background:white;
+  border-radius:3px;
+  margin: 0 auto 5px auto;
+}
+
+#progressbar li:after {
+  content:"";
+  width:100%;
+  height:2px;
+  background: white;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1;
+}
+
+#progressbar li:first-child:after {
+  content: none;
+}
+
+
+#progressbar li.active:before, #progressbar li.active:after{
+  background: #DE6262;
+  color: white;
+}
